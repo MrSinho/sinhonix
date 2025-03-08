@@ -3,7 +3,6 @@ Just some configuration stuff for my nixos
 
 ```shell
 sudo su
-cd /etc/
 mv /etc/nixos /etc/_nixos
 
 git clone https://github.com/mrsinho/sinhonix /etc/nixos
