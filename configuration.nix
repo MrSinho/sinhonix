@@ -120,6 +120,7 @@
 	pkgs.nodePackages.nodejs
 
 	pkgs.openssh
+	pkgs.docker
 
 	pkgs.vulkan-tools
 	pkgs.vulkan-loader
