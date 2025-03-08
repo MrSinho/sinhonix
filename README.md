@@ -11,3 +11,9 @@ git config --global --add safe.directory /etc/nixos
 
 cp /etc/_nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix 
 ```
+
+Build
+
+```shell
+nixos-rebuild switch
+```
