@@ -137,6 +137,8 @@
 	pkgs.openssh
 	pkgs.docker
 
+	pkgs.libGL
+
 	pkgs.vulkan-tools
 	pkgs.vulkan-loader
 	pkgs.vulkan-helper
@@ -152,8 +154,11 @@
 	pkgs.wayland-scanner
 	pkgs.egl-wayland
 	pkgs.xwayland
-	pkgs.mesa
+	
 	pkgs.libxkbcommon
+
+	pkgs.mesa
+	pkgs.mesa-demos
 
 	pkgs.xorg.libX11
 	pkgs.xorg.libXi
@@ -170,6 +175,19 @@
   environment.variables = {
     Vulkan_INCLUDE_DIR = "${pkgs.vulkan-headers}/include";
     Vulkan_LIBRARY = "${pkgs.vulkan-loader}/lib/libvulkan.so";
+
+    PATH = "${pkgs.wayland}/lib:${pkgs.vulkan-loader}/lib:$PATH/run/wrappers/bin:/home/sinho/.nix-profile/bin:/nix/profile/bin:/home/sinho/.local/state/nix/profile/bin:/etc/profiles/per-user/sinho/bin:/nix/var/nix/profiles/default/bin:/run/current-system/sw/bin";
+
+	# Somewhere /nix/store/...wayland-1.23.1-dev/lib/pkgconfig
+    #PKG_CONFIG_PATH = ''
+#${pkgs.wayland}/lib/pkgconfig:
+#
+#${pkgs.xorg.libXcursor-dev}/lib/pkgconfig:
+#
+#${pkgs.libxkbcommon}/lib/pkgconfig:
+#${pkgs.egl-wayland}/lib/pkgconfig:
+#$PKG_CONFIG_PATH"
+#'';
   };
   
   # Some programs need SUID wrappers, can be configured further or are
