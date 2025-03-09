@@ -94,11 +94,21 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+
+  # Setup for hardware acceleration
+  hardware.graphics.enable = true;  
+  hardware.graphics.enable32Bit = true;
+
+  # Allow packages with unfree licenses
+  nixpkgs.config.allowUnfree = true;
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
+
+    pkgs.nix-index # to locate files just do nix-locate filename
 
 	pkgs.dconf
   
@@ -113,11 +123,12 @@
 	pkgs.micro
 	pkgs.vscode
 
-	pkgs.libgcc
+	pkgs.gcc_multi
 	pkgs.cmake
 	pkgs.gnumake
 	pkgs.gdb
 	pkgs.gcc-arm-embedded
+	pkgs.doxygen
 
 	pkgs.python3Full
 	pkgs.nodePackages.nodejs
@@ -129,13 +140,25 @@
 	pkgs.vulkan-loader
 	pkgs.vulkan-helper
 	pkgs.vulkan-headers
+	pkgs.vulkan-tools-lunarg
 	pkgs.vulkan-extension-layer
 	pkgs.vulkan-validation-layers
+	pkgs.vulkan-utility-libraries
 
+	pkgs.mesa
+
+	pkgs.shaderc
+	pkgs.renderdoc
+	
 	pkgs.glfw
 	
   ];
 
+  environment.variables = {
+    Vulkan_INCLUDE_DIR = "${pkgs.vulkan-headers}/include";
+    Vulkan_LIBRARY = "${pkgs.vulkan-loader}/lib/libvulkan.so";
+  };
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
