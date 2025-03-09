@@ -108,7 +108,8 @@
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
 
-    pkgs.nix-index # to locate files just do nix-locate filename
+    pkgs.nix-index  # to locate files just do nix-locate filename
+	pkgs.pkg-config # allows finding other packages in the system
 
 	pkgs.dconf
   
@@ -145,7 +146,19 @@
 	pkgs.vulkan-validation-layers
 	pkgs.vulkan-utility-libraries
 
+	pkgs.deepin.dwayland
+	pkgs.waylandpp
+	pkgs.wayland-utils
+	pkgs.wayland-scanner
+	pkgs.egl-wayland
+	pkgs.xwayland
 	pkgs.mesa
+	pkgs.libxkbcommon
+
+	pkgs.xorg.libX11
+	pkgs.xorg.libXi
+	pkgs.xorg.libXrandr
+	pkgs.xorg.libXcursor
 
 	pkgs.shaderc
 	pkgs.renderdoc
