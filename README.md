@@ -1,19 +1,28 @@
-# sinhonix
-![NixOS](https://a11ybadges.com/badge?logo=nixos)
+# ![NixOS](https://a11ybadges.com/badge?logo=nixos) sinhonix 
+
 
 A `configuration.nix` file made to customize my NixOS system for personal use.
 
 ---
 
-## Development APIs and tools
+## Installed development APIs and tools
+
+![Git](https://a11ybadges.com/badge?logo=git)
+![GitHub](https://a11ybadges.com/badge?logo=github)
+![Visual Studio Code](https://a11ybadges.com/badge?logo=visualstudiocode)
+
+![Docker](https://a11ybadges.com/badge?logo=docker)
 
 ![CMake](https://a11ybadges.com/badge?logo=cmake)
 
-
-![](https://a11ybadges.com/badge?logo=vulkan)
+![Python](https://a11ybadges.com/badge?logo=python)
 ![Node.js](https://a11ybadges.com/badge?logo=nodedotjs)
-![Visual Studio Code](https://a11ybadges.com/badge?logo=visualstudiocode)
 
+![Khronos Group](https://a11ybadges.com/badge?logo=khronosgroup)
+![Vulkan](https://a11ybadges.com/badge?logo=vulkan)
+![OpenGL](https://a11ybadges.com/badge?logo=opengl)
+
+![Godot Engine](https://a11ybadges.com/badge?logo=godotengine)
 
 
 ---
