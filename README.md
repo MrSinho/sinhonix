@@ -59,3 +59,5 @@ cp /etc/_nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix
 ```shell
 nixos-rebuild switch
 ```
+
+To apply environment variables changes logout and then login or reboot the system.
