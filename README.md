@@ -1,7 +1,20 @@
 # sinhonix
-![](https://img.shields.io/badge/NixOS-5277C3?style=for-the-badge&logo=nixos&logoColor=white)
+![NixOS](https://a11ybadges.com/badge?logo=nixos)
 
 A `configuration.nix` file made to customize my NixOS system for personal use.
+
+---
+
+## Development APIs and tools
+
+![CMake](https://a11ybadges.com/badge?logo=cmake)
+
+
+![](https://a11ybadges.com/badge?logo=vulkan)
+![Node.js](https://a11ybadges.com/badge?logo=nodedotjs)
+![Visual Studio Code](https://a11ybadges.com/badge?logo=visualstudiocode)
+
+
 
 ---
 
