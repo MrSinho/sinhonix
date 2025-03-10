@@ -1,5 +1,13 @@
 # sinhonix
-Just some configuration stuff for my nixos
+![](https://img.shields.io/badge/NixOS-5277C3?style=for-the-badge&logo=nixos&logoColor=white)
+
+A `configuration.nix` file made to customize my NixOS system for personal use.
+
+---
+
+## Setup configuration folder
+
+The following commands will replace the default `/etc/nixos` folder with this repository. After that the original `hardware-configuration.nix` file will be recovered.
 
 ```shell
 sudo su
@@ -11,7 +19,9 @@ git config --global --add safe.directory /etc/nixos
 cp /etc/_nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix 
 ```
 
-Build
+---
+
+## Rebuild the system
 
 ```shell
 nixos-rebuild switch
