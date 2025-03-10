@@ -18,10 +18,8 @@ A `configuration.nix` file made to customize my NixOS system for personal use.
 ![Python](https://a11ybadges.com/badge?logo=python)
 ![Node.js](https://a11ybadges.com/badge?logo=nodedotjs)
 
-![Khronos Group](https://a11ybadges.com/badge?logo=khronosgroup)
 ![Vulkan](https://a11ybadges.com/badge?logo=vulkan)
 ![OpenGL](https://a11ybadges.com/badge?logo=opengl)
-
 ![Godot Engine](https://a11ybadges.com/badge?logo=godotengine)
 
 
